@@ -430,3 +430,148 @@ footer i {}
         padding: var(--padding-footer-mobile);
     }
 }
+
+
+
+/* Header Styles */
+
+header {
+    background-color: rgb(77, 77, 150);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem; /* Adjust padding as needed */
+}
+
+.site-title {
+    font-size: 2.0rem;
+    color: pink;
+    text-transform: uppercase;
+    margin: 1;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    color: white; 
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s;
+    display: flex;
+    border: 4px solid #FF0000; /* Bright Red border */
+    padding: 8px;
+    background-color: #1c1d1e; /* Light Pink background color */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--neutral-color-white);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--accent-color-cyan);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+
+
+/* Intro Section Styles */
+
+.intro {
+    background-color: rgba(199, 162, 162, 0.982);
+    color: var(--neutral-color-white);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.intro-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro-text {
+    border: 5px solid rgb(32, 29, 34);
+    border-top-right-radius: 5px;
+    position: relative;
+    right: 100px;
+    flex: 1;
+
+    background-color: blue;
+    color: var(--neutral-color-white);
+    padding: var(--padding-md);
+    border-radius: 10px; /* Add rounded corners */
+}
+
+.intro-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.lg-p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background: linear-gradient(50deg, var(--accent-color-cyan), var(--accent-color-blue));
+    border: none;
+    border-radius: 25px;
+    color: var(--neutral-color-white);
+    font-weight: 700;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(50deg, var(--accent-color-blue), var(--accent-color-cyan));
+}
+
+.intro-img {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-img img {
+    width: 200%;
+    height: 100%;
+    display: block;
+    position: relative;
+    left: 30px;
+}
+
