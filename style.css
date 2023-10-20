@@ -15,11 +15,13 @@
   --padding-footer-tablet: 20rem 3rem 1rem;
   --padding-footer-mobile: 25rem 3rem 1rem;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: var(--primary-color-dark-blue-2);
   color: var(--neutral-color-white);
@@ -67,10 +69,16 @@ a {
 }
 
 header {
+  height: 18vh;
+  background-color: rgb(38, 5, 69);
+  width: 100%;
   display: flex;
-  padding: var(--padding-md);
   justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-md);
+  /* Adjust padding as needed */
 }
+
 
 .nav-bar {
   display: flex;
@@ -122,11 +130,9 @@ section {
 
 button {
   border-radius: 25px;
-  background: linear-gradient(
-    50deg,
-    var(--accent-color-cyan),
-    var(--accent-color-blue)
-  );
+  background: linear-gradient(50deg,
+      var(--accent-color-cyan),
+      var(--accent-color-blue));
   border: none;
   font-family: var(--font-heading);
   color: var(--neutral-color-white);
@@ -150,11 +156,9 @@ input {
 
 button:hover {
   cursor: pointer;
-  background: linear-gradient(
-    50deg,
-    var(--accent-color-blue),
-    var(--accent-color-cyan)
-  );
+  background: linear-gradient(50deg,
+      var(--accent-color-blue),
+      var(--accent-color-cyan));
 }
 
 .features {
@@ -267,8 +271,8 @@ button:hover {
   grid-template-areas: "logo logo logo logo" "location contacts links social" "attribution attribution attribution attribution";
 }
 
-.contact-info > div,
-.contact-info > nav {
+.contact-info>div,
+.contact-info>nav {
   padding: 1rem 2.5rem;
 }
 
@@ -341,8 +345,7 @@ footer p {
   align-items: center;
 }
 
-footer i {
-}
+footer i {}
 
 .attribution-container {
   grid-area: attribution;
@@ -361,45 +364,56 @@ footer i {
   header {
     padding: var(--padding-sm);
   }
+
   header img,
   footer img {
     width: 117px;
     height: auto;
   }
+
   section {
     padding: var(--padding-sm);
   }
-  .intro > div,
+
+  .intro>div,
   .features-item {
     width: 100%;
   }
+
   .testimonial,
   .productive {
     flex-direction: column;
   }
+
   .features-item {
     padding: 2rem 0;
   }
+
   .productive-content {
     margin-top: 2rem;
     padding: 0;
   }
+
   .testimonial-item {
     margin-left: 0;
     margin-top: 3.5rem;
     width: 80%;
   }
+
   .cta-item {
     width: 80%;
     padding: 2.5rem 2rem;
   }
+
   .cta-form {
     flex-direction: column;
   }
+
   .input-block {
     max-width: 100%;
     width: auto;
   }
+
   .btn-block {
     max-width: 100%;
     width: auto;
@@ -407,26 +421,32 @@ footer i {
     margin-top: 1rem;
     margin-left: 0;
   }
+
   .contact-info {
     padding: var(--padding-footer-tablet);
     grid-template-columns: 100%;
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "logo" "location" "contacts" "links" "social" " attribution";
   }
-  .contact-info > div,
-  .contact-info > nav {
+
+  .contact-info>div,
+  .contact-info>nav {
     padding: 1rem 0;
   }
+
   .contact-info-contacts {
     align-items: flex-start;
   }
+
   .contact-info-links {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .contact-info-links-list:first-child {
     margin-bottom: 1rem;
   }
+
   .contact-info-social-links {
     justify-content: center;
   }
@@ -436,10 +456,12 @@ footer i {
   section {
     padding: var(--padding-sm);
   }
+
   .cta-item {
     min-width: 50%;
     max-width: 70%;
   }
+
   .contact-info {
     padding: var(--padding-footer-mobile);
   }
@@ -452,7 +474,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Adjust padding as needed */
+  padding: 1rem 2rem;
+  /* Adjust padding as needed */
 }
 
 .site-title {
@@ -523,7 +546,7 @@ header {
 /* Intro Section Styles */
 
 .intro {
-  background-color: #fff;
+  background-image: linear-gradient(to right top, #f4eef6, #e8e4f6, #d5dcf7, #bbd6f7, #9ad1f3);
   color: var(--neutral-color-white);
   padding: 5%;
   display: flex;
@@ -544,7 +567,8 @@ header {
   background-color: var(--primary-color-dark-blue-1);
   color: var(--neutral-color-white);
   padding: 50px;
-  border-radius: 10px; /* Add rounded corners */
+  border-radius: 10px;
+  /* Add rounded corners */
   width: 49%;
   min-height: 392px;
 }
@@ -559,11 +583,9 @@ header {
 }
 
 .btn {
-  background: linear-gradient(
-    50deg,
-    var(--accent-color-cyan),
-    var(--accent-color-blue)
-  );
+  background: linear-gradient(50deg,
+      var(--accent-color-cyan),
+      var(--accent-color-blue));
   border: none;
   border-radius: 25px;
   color: var(--neutral-color-white);
@@ -575,11 +597,9 @@ header {
 }
 
 .btn:hover {
-  background: linear-gradient(
-    50deg,
-    var(--accent-color-blue),
-    var(--accent-color-cyan)
-  );
+  background: linear-gradient(50deg,
+      var(--accent-color-blue),
+      var(--accent-color-cyan));
 }
 
 .intro-img {
