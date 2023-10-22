@@ -1,0 +1,11 @@
+
+
+@-webkit-keyframes kenburns-right{0%{-webkit-transform:scale(1) translate(0,0);transform:scale(1) translate(0,0);
+                                  -webkit-transform-origin:84% 50%;
+                                  transform-origin:84% 50%}100%{-webkit-transform:scale(1.25) translateX(20px);
+transform:scale(1.25) translateX(20px);-webkit-transform-origin:right;
+transform-origin:right}}@keyframes kenburns-right{0%{-webkit-transform:scale(1) translate(0,0);
+                                                     transform:scale(1) translate(0,0);-webkit-transform-origin:84% 50%;
+                                                     transform-origin:84% 50%}100%{-webkit-transform:scale(1.25) translateX(20px);
+                                                                                   transform:scale(1.25) translateX(20px);-webkit-transform-origin:right;
+                                                                                   transform-origin:right}}
