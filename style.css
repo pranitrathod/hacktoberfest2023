@@ -69,7 +69,7 @@ a {
 }
 
 header {
-  height: 18vh;
+ 
   background-color: rgb(38, 5, 69);
   width: 100%;
   display: flex;
@@ -478,8 +478,20 @@ header {
   /* Adjust padding as needed */
 }
 
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.logo{
+  height: 55px;
+}
+
 .site-title {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: #fff;
   text-transform: uppercase;
   margin: 1;
@@ -593,7 +605,7 @@ header {
   padding: 10px 20px;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: background 0.3s;
+
 }
 
 .btn:hover {

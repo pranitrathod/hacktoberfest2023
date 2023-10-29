@@ -1,0 +1,15 @@
+gsap.from(".logo",{
+    y:-100,
+    duration:1,
+    delay:0.5
+})
+gsap.from(".site-title",{
+    y:-100,
+    duration:1,
+    delay:0.5
+})
+gsap.from(".nav-bar",{
+    y:-100,
+    duration:1,
+    delay:0.5
+})
